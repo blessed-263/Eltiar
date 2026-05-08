@@ -1,6 +1,14 @@
 import { motion } from 'motion/react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Check, Calendar } from 'lucide-react';
+
+function scrollToTimeSlotsOnMobile(container: HTMLElement | null) {
+  if (typeof window === 'undefined' || !container) return;
+  if (!window.matchMedia('(max-width: 1023px)').matches) return;
+  window.requestAnimationFrame(() => {
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}
 
 const scheduleData = [
   {
@@ -62,6 +70,7 @@ export function Booking() {
   const [selectedDayIdx, setSelectedDayIdx] = useState(0);
   const [selectedSlots, setSelectedSlots] = useState<{ dayIdx: number, slotId: string }[]>([]);
   const [bookingState, setBookingState] = useState<'idle' | 'confirming' | 'success'>('idle');
+  const timeSlotsRef = useRef<HTMLDivElement>(null);
 
   const selectedDay = scheduleData[selectedDayIdx];
 
@@ -133,6 +142,7 @@ export function Booking() {
                       if (bookingState === 'confirming') {
                         setBookingState('idle');
                       }
+                      scrollToTimeSlotsOnMobile(timeSlotsRef.current);
                     }}
                     className={`flex items-center justify-between p-6 w-full text-left transition-all duration-500 border-l-[1px] ${
                       selectedDayIdx === idx 
@@ -153,8 +163,12 @@ export function Booking() {
               </div>
             </div>
 
-            {/* Timetable */}
-            <div className="lg:w-2/3">
+            {/* Timetable — ref target for mobile scroll after choosing a date */}
+            <div
+              ref={timeSlotsRef}
+              id="booking-time-slots"
+              className="lg:w-2/3 scroll-mt-32 md:scroll-mt-40"
+            >
               <motion.div
                 key={selectedDay.day}
                 initial={{ opacity: 0, x: 20 }}
