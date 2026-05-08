@@ -1,18 +1,18 @@
 import { motion } from 'motion/react';
 
 const images = [
-  { url: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[3/4]', caption: 'Stillness' },
-  { url: 'https://images.unsplash.com/photo-1600618528240-fb9fc964b853?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[4/5]', caption: 'Alignment' },
-  { url: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-square', caption: 'Kinetic Energy' },
-  { url: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[2/3]', caption: 'Morning Light' },
-  { url: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[16/9]', caption: 'The Atrium' },
-  { url: 'https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[3/4]', caption: 'Fluidity' },
-  { url: 'https://images.unsplash.com/photo-1599901860904-17e08c3d31b0?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-square', caption: 'Form & Space' },
-  { url: 'https://images.unsplash.com/photo-1554244933-d876deb6b2ff?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[4/5]', caption: 'Breathwork' },
-  { url: 'https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[3/5]', caption: 'Grounding' },
-  { url: 'https://images.unsplash.com/photo-1524863479829-916d8e77f114?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[4/3]', caption: 'The Sanctuary' },
-  { url: 'https://images.unsplash.com/photo-1499557406246-17b20464f1dc?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-square', caption: 'Texture' },
-  { url: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=1200', aspect: 'aspect-[3/4]', caption: 'Focus' }
+  { url: '/images/photo-1545205597.jpg', aspect: 'aspect-[3/4]', caption: 'Stillness' },
+  { url: '/images/photo-1600618528240.jpg', aspect: 'aspect-[4/5]', caption: 'Alignment' },
+  { url: '/images/photo-1518611012118.jpg', aspect: 'aspect-square', caption: 'Kinetic Energy' },
+  { url: '/images/photo-1506126613408.jpg', aspect: 'aspect-[2/3]', caption: 'Morning Light' },
+  { url: '/images/photo-1544367567.jpg', aspect: 'aspect-[16/9]', caption: 'The Atrium' },
+  { url: '/images/photo-1603988363607.jpg', aspect: 'aspect-[3/4]', caption: 'Fluidity' },
+  { url: '/images/photo-1599901860904.jpg', aspect: 'aspect-square', caption: 'Form & Space' },
+  { url: '/images/photo-1554244933.jpg', aspect: 'aspect-[4/5]', caption: 'Breathwork' },
+  { url: '/images/photo-1536623975707.jpg', aspect: 'aspect-[3/5]', caption: 'Grounding' },
+  { url: '/images/photo-1524863479829.jpg', aspect: 'aspect-[4/3]', caption: 'The Sanctuary' },
+  { url: '/images/photo-1499557406246.jpg', aspect: 'aspect-square', caption: 'Texture' },
+  { url: '/images/photo-1512290923902.jpg', aspect: 'aspect-[3/4]', caption: 'Focus' },
 ];
 
 export function Gallery() {

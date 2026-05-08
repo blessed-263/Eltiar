@@ -29,7 +29,7 @@ export function Pilates() {
             className="aspect-[4/5] w-full"
           >
             <img 
-              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=2000" 
+              src="/images/photo-1518611012118.jpg" 
               alt="Reformer Pilates" 
               className="w-full h-full object-cover"
             />

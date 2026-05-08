@@ -30,7 +30,7 @@ export function About() {
         className="w-full aspect-video overflow-hidden"
       >
         <img 
-          src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2600&auto=format&fit=crop" 
+          src="/images/photo-1544367567.jpg" 
           alt="Eltiar Ethos" 
           className="w-full h-full object-cover grayscale-[10%]"
         />

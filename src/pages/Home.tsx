@@ -31,7 +31,7 @@ export function Home() {
         >
           <div className="absolute inset-0 bg-black/40 z-10" />
           <img 
-            src="https://images.unsplash.com/photo-1603988363607-e1e4a66962c6?q=80&w=2600&auto=format&fit=crop" 
+            src="/images/photo-1603988363607.jpg" 
             alt="Eltiar Wellness Movement"
             className="w-full h-full object-cover scale-105"
           />
@@ -88,7 +88,7 @@ export function Home() {
             className="relative aspect-[3/4] w-full"
           >
             <img 
-              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop" 
+              src="/images/photo-1544367567.jpg" 
               alt="Mindful movement practice" 
               className="w-full h-full object-cover grayscale-[10%]"
             />
@@ -133,7 +133,7 @@ export function Home() {
                 <div className="aspect-[2/3] w-full overflow-hidden mb-12 relative cursor-pointer">
                   <div className="absolute inset-0 bg-sage/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-1000" />
                   <img 
-                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=2000" 
+                    src="/images/photo-1518611012118.jpg" 
                     alt="Movement Offerings" 
                     className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000 ease-out"
                   />
@@ -160,7 +160,7 @@ export function Home() {
                 <div className="aspect-[2/3] w-full overflow-hidden mb-12 relative cursor-pointer">
                   <div className="absolute inset-0 bg-sage/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-1000" />
                   <img 
-                    src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&q=80&w=2000" 
+                    src="/images/photo-1545205597.jpg" 
                     alt="Experiential Offerings" 
                     className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000 ease-out"
                   />
